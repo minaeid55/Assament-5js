@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <!-- to link bootstarip -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- to link awsome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- to link main css file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg py-5">
+    <div class="container">
+      <div class="logo d-flex justify-content-between align-items-center ">
+        <a href="#">
+          <img src="./images/logo.png" alt="logo of Weather">
+        </a>
+        <a class="text-logo ps-2" href="#">
+          <h1 class="fs-6 fw-bolder text-white mb-1">Weather</h1>
+          <p class="mb-0 ">tagline goes here</p>
+        </a>
+      </div>
+      <button class="toggle-btn " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=" text-white"></span>
+        <span class=" text-white"></span>
+        <span class=" text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-lg-0 links gap-3">
+          <li class="nav-item">
+            <a class=" active rounded-5 " aria-current="page" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class=" rounded-5  link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class=" rounded-5 link" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class=" rounded-5 link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class=" rounded-5 link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="collection">
+    <div class="img-url">
+      <div class="container  overflow-auto">
+        <form action="" class=" mt-5 position-relative ">
+          <input type="text" name="location" placeholder="Find your location..." class=" w-100 p-3 rounded-5 location">
+          <input type="button" value="Find" class="rounded-5 position-absolute find">
+        </form>
+        <div class="results mt-5 ">
+          <div class="row py-4">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container overflow-auto ">
+      <div class="row gy-4 subscribe d-flex mt-5  justify-content-between">
+        <div class="col-lg-8">
+          <form action="" class="  position-relative ">
+            <input type="text" name="location" placeholder="Enter your email to subscribe..."
+              class="w-100 p-3 rounded-5 location">
+            <input type="submit" value="subscribe" class="rounded-5 position-absolute find">
+          </form>
+        </div>
+        <div class="col-lg-4 ">
+          <div class="icons-contact me-5 d-flex gap-2">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-google"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="mt-4 mb-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
